@@ -1,6 +1,6 @@
 import React, { createContext, useContext, useReducer } from "react";
 
-// Preparing the date layer
+//Preparing the data layer *******************************************
 export const StateContext = createContext();
 
 export const StateProvider = ({ reducer, initialState, children }) => (
@@ -9,5 +9,5 @@ export const StateProvider = ({ reducer, initialState, children }) => (
   </StateContext.Provider>
 );
 
-//Hook which allow us to pull information from the date layer
+// Hooks which allows us to pull information form the data layer ****************
 export const useStateValue = () => useContext(StateContext);
